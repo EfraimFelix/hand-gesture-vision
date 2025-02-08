@@ -13,11 +13,10 @@ class HandGestureRecognition:
         self.current_gesture_name = ""
         self.landmarks_data = []
         self.gesture_map = {
-            '1': 'Open_Hand',
-            '2': 'Closed_Hand',
-            '3': 'Right_Tilted_Hand',
-            '4': 'Left_Tilted_Hand',
-            '5': 'Other_Gesture'
+            '1': 'FORWARD',
+            '2': 'BACKWARD',
+            '3': 'RIGHT',
+            '4': 'LEFT'
         }
 
     def recognize_gesture(self, frame):
@@ -37,10 +36,8 @@ class HandGestureRecognition:
 
     def save_to_csv(self):
         if not self.landmarks_data:
-            return
-        
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"hand_gestures_{timestamp}.csv"
+            return        
+        filename = f"./datasets/dataset.csv"
         
         headers = []
         for i in range(21):
@@ -61,11 +58,10 @@ if __name__ == "__main__":
     
     print("Controls:")
     print("R - Start/Stop recording")
-    print("1 - Open Hand")
-    print("2 - Closed Hand")
-    print("3 - Right Tilted Hand")
-    print("4 - Left Tilted Hand")
-    print("5 - Other Gesture")
+    print("1 - FORWARD")
+    print("2 - BACKWARD")
+    print("3 - RIGHT")
+    print("4 - LEFT")
     print("S - Save to CSV")
     print("Q - Quit")
     
