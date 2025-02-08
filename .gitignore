@@ -1,0 +1,43 @@
+# Build directories e artefatos de compilação
+/build/
+/bin/
+/out/
+/lib/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Arquivos compilados
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+
+# Arquivos e logs temporários
+*.log
+*.tmp
+
+# Arquivos de cache do Python (caso use Python)
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Checkpoints de notebooks Jupyter (se aplicável)
+.ipynb_checkpoints
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Diretórios e arquivos de editores/IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.bak
+
+# Variáveis de ambiente e arquivos de configuração
+.env
