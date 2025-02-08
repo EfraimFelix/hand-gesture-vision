@@ -49,22 +49,22 @@ class GestureControlledRobot:
         back_right_speed = 0.0
         
         print("Gesture: " + gesture)
-        if gesture == "Closed_Hand":  # forward
+        if gesture == "Open_Hand":  # forward
             front_left_speed = self.MAX_SPEED
             front_right_speed = self.MAX_SPEED
             back_left_speed = self.MAX_SPEED
             back_right_speed = self.MAX_SPEED
-        elif gesture == "Open_Hand": #backward
+        elif gesture == "Closed_Hand": #backward
             front_left_speed = -self.MAX_SPEED
             front_right_speed = -self.MAX_SPEED
             back_left_speed = -self.MAX_SPEED
             back_right_speed = -self.MAX_SPEED
-        elif gesture == "Right_Tilted_Hand": #left
+        elif gesture == "Left_Tilted_Hand": #left
             front_left_speed = -self.MAX_SPEED / 2
             front_right_speed = self.MAX_SPEED / 2
             back_left_speed = -self.MAX_SPEED / 2
             back_right_speed = self.MAX_SPEED / 2
-        elif gesture == "right":
+        elif gesture == "Right_Tilted_Hand": #right
             front_left_speed = self.MAX_SPEED / 2
             front_right_speed = -self.MAX_SPEED / 2
             back_left_speed = self.MAX_SPEED / 2
