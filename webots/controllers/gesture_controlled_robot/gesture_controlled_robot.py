@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 from controller import Robot, Motor
-from predict_example import predict_new_gesture
+from predict import predict_new_gesture
 
 class GestureControlledRobot:
     def __init__(self):
