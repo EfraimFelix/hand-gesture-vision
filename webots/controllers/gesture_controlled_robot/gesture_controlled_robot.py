@@ -12,8 +12,8 @@ class GestureControlledRobot:
         self.mp_draw = mp.solutions.drawing_utils
         
         # Configuração Webots
-        self.TIME_STEP = 32
-        self.MAX_SPEED = 15
+        self.TIME_STEP = 1000
+        self.MAX_SPEED = 6.4
         self.robot = Robot()
         
         # Configuração das rodas
