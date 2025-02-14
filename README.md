@@ -50,6 +50,4 @@ Faça o [download](https://cyberbotics.com/) do Webots e abra o mundo disponíve
 file > open world > .\hand-gesture-vision\webots\worlds
 ``
 
-Aperte no play para iniciar a simulação com os gestos treinados:
-
-[imagem do mundo]
+Aperte no play para iniciar a simulação com os gestos treinados.
